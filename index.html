@@ -88,6 +88,40 @@ html{
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+
+   <style>
+    section.products{
+        border: 10px solid #0000ff;
+        text-align: center;
+        width: 90%;
+        padding-bottom: 30px;
+    }
+    section.products div{
+        width:20%;
+        border: 5px solid #00ff01;
+        display:inline-block;
+
+    }
+
+    li.option{
+        display: inline-block;
+        outline: 2px solid gray;
+        margin: 10px 30px;
+        transition: all 1s;
+
+    }
+    li.option:hover{
+        background: orange;
+    }
+    li.option input:checked span{
+        background-color: blue;
+    }
+
+
+   </style>
+
+    
+
 </head>
 <body>
     <header>
@@ -148,28 +182,28 @@ html{
     </div>
 </section>
 
-<section class="Products">
+<section class="products">
     <h2>Products</h2>
     <div>
-        <h4>Product1</h4>
+        <h4>Product 1</h4>
         desc1
     </div>
 
 
     <div>
-        <h4>Product2</h4>
+        <h4>Product 2</h4>
         desc2
     </div>
 
 
     <div>
-        <h4>Product3</h4>
+        <h4>Product 3</h4>
         desc3
     </div>
 
 
     <div>
-        <h4>Product4</h4>
+        <h4>Product 4</h4>
         desc4
     </div>
 
@@ -177,32 +211,48 @@ html{
 </section>
 
 <section class="contact">
-
+    <h2>Contact</h2>    
+    <div>
     <input type="text" name"Name">
-    <ul>
-        <li><input type="checkbox" name="Product1">
-            Product1
+</div>
+    <ul class="checkbox">
+        <label>
+        <li class="option"><input type="checkbox" name="Product1">
+            <span>Product1</span>
         </li>
-        <li><input type="checkbox" name="Product2">
-            Product2
+        </label>
+        <label>
+        <li class="option"><input type="checkbox" name="Product2">
+            <span>Product2</span>
         </li>
-        <li><input type="checkbox" name="Product3">
-            Product3
+        </label>
+        <label>
+        <li class="option"><input type="checkbox" name="Product3">
+            <span>Product3</span>
         </li>
-        <li><input type="checkbox" name="Product4">
-            Product4
+        </label>
+        <label>
+        <li class="option"><input type="checkbox" name="Product4">
+            <span>Product4</span>
         </li>
+    </label>
     </ul>
-    <ul>
-        <li><input type="radio" name="Currency">
+    <ul class="currency">
+        <label>
+        <li class="option"><input type="radio" name="Currency">
             $ USD
         </li>
-        <li><input type="radio" name="Currency">
-            £ GBP
-        </li>
-        <li><input type="radio" name="Currency">
-            € EURO
-        </li>
+        </label>
+        <label>
+            <li class="option"><input type="radio" name="Currency">
+                £ GBP
+            </li>
+        </label>
+        <label>
+            <li class="option"><input type="radio" name="Currency">
+                € EURO
+            </li>
+        </label>
 
     </ul>
 </section>

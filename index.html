@@ -19,9 +19,8 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
    section {
-    
     height: 500px;
-
+    position: relative;
    }
    
    header{
@@ -51,39 +50,42 @@ html{
     background-size: cover;
     width: 100%;
     height: 800px;
-
-
-     }
+    }
+    .Testimonials{
+        padding:50px;
+        margin:50px;
+        height:100px;
+    }
 
    .Testimonials div{
     width: 40%;
     text-align: center;
     display: inline-block;
+    position: absolute;
+}
 
-
-
-
-   }
    .Testimonials div:first-of-type{
-    background-image:url('https://gp5.googleusercontent.com/-PcuOPcxHYMs/AAAAAAAAAAI/AAAAAAAAAAA/LBkGw8zRvDk/s48-c-k-no/photo.jpg');
-    background-repeat: no-repeat;
 
-
-
-
+    
+    top:0;
    }
+
    .Testimonials div:nth-of-type(2){
-    background-image:url('http://theagenda.tvo.org/sites/default/files/imagecache/featured_160x90/iphones-feature.jpg');
-    background-repeat: no-repeat;
+   
+    bottom:0;
    }
-   .Testimonials div:nth-of-type(3){
-    background-image:url('http://i1.ytimg.com/vi/U2GFHfgLprg/default.jpg');
-    background-repeat: no-repeat;
 
+   .Testimonials div:nth-of-type(3){
+    
+    top:0;
+    left:50%;
    }
+
    .Testimonials div:last-of-type{
-    background-image:url('http://www.thaigaming.com/customavatars/avatar93679_2.gif');
-    background-repeat: no-repeat;
+    /*background-image:url('http://www.thaigaming.com/customavatars/avatar93679_2.gif');*/
+   
+    bottom:0;
+    left:50%;
 
    }
 
@@ -155,27 +157,31 @@ r
     </aside>
 </section>
 
+<h1>Testimonials</h1>
 <section class="Testimonials">
-    <h1>Testimonials</h1>
     <div>
         <h3>Spongebob</h3>
+        <img src="https://gp5.googleusercontent.com/-PcuOPcxHYMs/AAAAAAAAAAI/AAAAAAAAAAA/LBkGw8zRvDk/s48-c-k-no/photo.jpg" alt="">
 
         The sponges are good quality
 
     </div>
     <div>
         <h3>Bill Gates</h3>
-
+        <img src="http://theagenda.tvo.org/sites/default/files/imagecache/featured_160x90/iphones-feature.jpg" alt="">
         Their Iphones are superior!!
 
     </div>
     <div>
         <h3>Batman</h3>
+        <img src="http://i1.ytimg.com/vi/U2GFHfgLprg/default.jpg" alt="">
         I'm a huge fan of the suits. 100% recommended
 
     </div>
     <div>
         <h3>Water</h3>
+        <img src="http://www.thaigaming.com/customavatars/avatar93679_2.gif" alt="">
+
 
         The water tasts good!!!
 

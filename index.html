@@ -90,14 +90,14 @@ html{
    }
 
     section.products{
-        border: 10px solid #0000ff;
+        border: 10px solid #ff0000;
         text-align: center;
         width: 90%;
         padding-bottom: 30px;
     }
     section.products div{
         width:20%;
-        border: 5px solid #00ff01;
+        border: 5px solid rgba(255,00,00,.7);
         display:inline-block;
 
     }
@@ -223,10 +223,12 @@ html{
 <section class="contact">
     <h2>Contact</h2>    
     <div>
+        Name
     <input type="text" name="Name">
 </div>
-    <ul class="checkbox">
-        
+    <span>Choices</span>
+    <ul>
+
         <li class="option" class="pure-u-1-4">
             <label>
             <input type="checkbox" name="Product1">
@@ -258,6 +260,7 @@ html{
         </li>
     
     </ul>
+    <span>Currency</span>
     <ul class="currency">
         
         <li class="option" class="pure-u-1-3">
@@ -282,6 +285,11 @@ html{
                 € EURO
                 </label>
             </li>
+            <div>Payment Type</div>
+            <br>
+            <br>
+            <span>Special requests</span>
+            <input type="text" name="requests">
         
 
     </ul>

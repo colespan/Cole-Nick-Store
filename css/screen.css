@@ -1,0 +1,143 @@
+section.products{
+	border: 4px solid #0000ff;
+	column-count:4;
+}
+
+    
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+section {
+height: 500px;
+position: relative;
+}
+
+header{
+position: fixed;
+height: 50px;
+width: 100%;
+background-color: red;
+}
+.nav li{
+    display: inline;
+
+}
+p{
+display: inline-block;
+vertical-align: middle !important;
+
+}
+.headline aside{
+height: 200px;
+border: 5px solid black;
+top: 150px;
+left: 20px;
+position: absolute;
+width: 250px;
+padding: 0 15px;
+font-color: red;
+ }
+ 
+
+ .pure-u-1-2 img{
+    /*display: inline-block;*/
+
+ }
+
+ .pure-u-1-2 h3{
+    /*display: inline-block;*/
+ }
+
+ .pure-u-1-2 p{
+    /*display: inline-block;*/
+ }
+
+
+
+ .wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    
+ }
+ .rounded{
+ 	border-radius:100%;
+ }
+ .pure-u-1-2{
+    text-align: center;
+ }
+ div{
+
+ }
+
+h2 {
+	text-align: center;
+}
+h3{
+	
+}
+
+ .headline{
+background-image:url('http://1.bp.blogspot.com/-KfklbZxYumE/UhnrHOE60-I/AAAAAAAGWx4/lTJh0htVpnI/s1600/TARGET+DEPARTMENT+STORE,+Target+Store.JPG');
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 800px;
+}
+.Testimonials{
+    padding:50px;
+    margin:50px;
+    height:100px;
+}
+
+  /* .Testimonials div{
+   
+}
+
+   .Testimonials div:first-of-type{
+
+    
+  
+   }
+
+   .Testimonials div:nth-of-type(2){
+   
+  
+   }
+
+   .Testimonials div:nth-of-type(3){
+    
+   }
+
+   .Testimonials div:last-of-type{
+   
+   
+   
+   }*/
+
+    section.products{
+        border: 10px solid #0000ff;
+        text-align: center;
+        width: 90%;
+        padding-bottom: 30px;
+    }
+    section.products div{
+        width:20%;
+        border: 5px solid #00ff01;
+        display:inline-block;
+
+    }
+
+    li.option{
+        display: inline-block;
+        outline: 2px solid gray;
+        margin: 10px 30px;
+        transition: all 1s;
+
+    }
+    li.option:hover{
+        background: orange;
+    }
+    li.option input:checked span{
+        background-color: blue;
+    }
+
